@@ -1,0 +1,24 @@
+{
+  "name": "wmserver",
+  "version": "0.0.0",
+  "description": "wmserver\r ========",
+  "main": "wmserver.js",
+  "dependencies": {
+    "express": "~4.10.1",
+    "peer": "~0.2.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rahazan/wmserver.git"
+  },
+  "author": "Guido",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rahazan/wmserver/issues"
+  },
+  "homepage": "https://github.com/Rahazan/wmserver"
+}
