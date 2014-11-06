@@ -32,5 +32,6 @@ pjs.on('disconnect', function (id) {
 });
 
 app.get('/connectedpeers', function (req, res) {
-  return res.json(connected);
+  console.log("Connected peers req");
+  return res.jsonp(connected);
 });
