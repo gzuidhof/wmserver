@@ -2,8 +2,11 @@ var express = require('express');
 var app = express();
 var ExpressPeerServer = require('peer').ExpressPeerServer;
 
-var server = app.listen(7070);
-app.get('/', function(req, res, next) { res.send('Hello world!'); });
+var server = app.listen(7170);
+app.get('/', function(req, res, next) {
+  console.log("Index GET " + req.ip);
+  res.send('Hello world!');
+  });
 
 var options = {
     debug: true
@@ -32,6 +35,6 @@ pjs.on('disconnect', function (id) {
 });
 
 app.get('/connectedpeers', function (req, res) {
-  console.log("Connected peers req");
+  console.log("Connected peers request from " + req.ip);
   return res.jsonp(connected);
 });
